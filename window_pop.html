@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+
+        .winpop{
+            width: 200px;
+            border: 10px solid blue;
+            padding: 10px 0;            
+        }
+        .winpop a{
+            display: block;
+        }
+    </style>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script lang="java">
+        $(function(){
+
+            $(".winpop").click(function(){
+                winopen();
+            })//
+
+            function winopen(){
+                window.open("mobile_hover.html", "_blank", 
+                "width=500, height=300, left=600, top=300, location=no")
+            }//
+
+            // "_blank"  :새창으로 열기
+            // "_parent" : 부모 프레임으로 열기
+            // "_self" :  현재 페이지로 열기
+            // "_top" : 맨 처음 로드된 프레임으로 열기
+
+
+
+
+        })//jquery
+    </script>
+</head>
+<body>
+    <div class="winpop"><a href="#">윈도우 팝업</a></div>
+</body>
+</html>
